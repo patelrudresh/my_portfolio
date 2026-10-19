@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+    color: #111111;
+    /* background: radial-gradient( circle at 10% 15%, rgba(247, 182, 200, 0.65), transparent 30%), radial-gradient( circle at 50% 45%, rgba(255, 233, 184, 0.65), transparent 35%), radial-gradient( circle at 90% 75%, rgba(185, 237, 240, 0.7), transparent 32%), #fffdf8; */
+}
+
+#root {
+    width: 100%;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
