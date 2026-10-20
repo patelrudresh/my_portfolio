@@ -91,8 +91,8 @@ export default function Navbar() {
 
         <div
           className={`max-w-full mx-auto px-3 sm:px-8 transition-all duration-300 ${scrolled
-              ? "bg-white/50 backdrop-blur-xl shadow-2xl"
-              : "bg-white shadow-xl"
+            ? "bg-white/50 backdrop-blur-xl shadow-2xl"
+            : "bg-white shadow-xl"
             }`}
         >
           <div className="h-[72px] flex items-center justify-between px-4 sm:px-8">
@@ -200,19 +200,29 @@ export default function Navbar() {
                 duration: 0.35,
                 ease: "easeInOut",
               }}
-              className="fixed top-3 right-0 bottom-70 w-[88%] max-w-[350px] rounded-[30px]
-bg-white/15
-backdrop-blur-[24px]
-border border-white/20
-shadow-[0_20px_60px_rgba(0,0,0,0.25)]
-overflow-hidden
-z-50
-lg:hidden
+              className="
+  fixed top-2 right-3 bottom-10
+  w-[80%] max-w-[310px]
+max-h-[550px]
+  rounded-[24px]
+  bg-[#FFF9EF]/25
+  backdrop-blur-xl
+  border border-[#E6D9CA]
+  shadow-2xl
+  overflow-hidden
+  z-50 lg:hidden
+  flex flex-col
 "
             >
               {/* Header */}
 
-              <div className="flex items-center justify-between px-6 h-10 border-b border-gray-200">
+              <div className="
+  flex items-center justify-between
+  px-5 py-4
+  min-h-[88px]
+  border-b border-[#E6D9CA]
+  shrink-0
+">
 
                 <div className="flex items-center gap-3">
 
@@ -245,7 +255,7 @@ lg:hidden
 
               {/* Navigation */}
 
-              <nav className="px-5 mt-6 space-y-2">
+              <nav className="px- 4 py-1 space-y-0 flex-1 overflow-y-auto">
 
                 {navItems.map((item) => {
 
@@ -260,14 +270,14 @@ lg:hidden
                         handleNavClick(e, item.href);
                         setOpen(false);
                       }}
-                      className={`flex items-center gap-4 px-5 py-4 rounded-2xl transition-all duration-300 ${active === item.href
+                      className={`flex items-center gap-4 px-4 py-3 rounded-2xl transition-all duration-300 ${active === item.href
                         ? "bg-[#A45D42] text-[#A45D42]/700 border-l-4 border-black-500"
                         : "hover:bg-gray-100 text-black"
                         }`}
                     >
                       <Icon size={22} />
 
-                      <span className="text-lg">
+                      <span className="text-base">
                         {item.title}
                       </span>
                     </a>
@@ -277,22 +287,20 @@ lg:hidden
               </nav>
 
               {/* Bottom Button */}
-              <div className="absolute left-6 right-6 bottom-4">
+              <div className="px-4 py-3 mt-auto shrink-0 border-t border-[#E6D9CA]">
                 <a
                   href="tel:+916263502087"
-                  className="flex items-center justify-center gap-3
-h-16
-rounded-4xl
-bg-[#A45D42]/25
-text-[#111111]
-text-xl
-border-red-500
-font-semibold
-hover:bg-[#A45D42]
-hover:text-black
-transition-all"
+                  className="
+      flex items-center justify-center gap-2
+      w-full h-12
+      rounded-xl
+      bg-[#A45D42]
+      text-white text-base font-semibold
+      hover:bg-[#8E4D36]
+      transition-all
+    "
                 >
-                  <Phone size={24} />
+                  <Phone size={20} />
                   Call Now
                 </a>
               </div>
