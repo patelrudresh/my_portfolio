@@ -15,7 +15,7 @@ const certificates = [
     date: "Add completion date",
     description:
       "Training and learning in Java, backend development, databases and full-stack application development.",
-    file: "/public/certificate-1.pdf",
+    file: "/certificate-1.pdf",
     accent: "bg-[#F7D8C9]",
   },
   {
@@ -25,7 +25,7 @@ const certificates = [
     date: "Add completion date",
     description:
       "Practical learning in web technologies and building responsive, user-friendly applications.",
-    file: "/public/certificate-02.pdf",
+    file: "/certificate-02.pdf",
     accent: "bg-[#D8EEEE]",
   },
 ];

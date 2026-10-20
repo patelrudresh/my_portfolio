@@ -321,7 +321,7 @@ const Projects = () => {
 
                   <div className="aspect-[4/3] overflow-hidden bg-white sm:aspect-[16/10]">
                     <img
-                      src="public/matrimonial-project.png"
+                      src="/matrimonial-project.png"
                       alt="Preview of the Matrimonial Web Application"
                       className="h-full w-full object-cover object-top"
                       loading="lazy"
